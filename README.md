@@ -37,7 +37,7 @@ Need to go to following server: https://app.quickdatabasediagrams.com/#/d/iu7dum
       3. Open each CSV files to get each headers name to be input into tables, headers need to be an exact same format as csv files
       4. Each tables, need to specify data types, primary or foreign keys, and other constraints
       5. Other constraints include: Specifying "NOT NULL' conditins on necessary columns, defines value length for columns
-      6. After creating tables, then start to import each files one by one by specifiying header on
+      6. After creating tables, then start to import each files one by one (under "data" file) by specifiying header on
       7. For csv files that contain date(Employees table), format needs to be changed to SQL format before importing
       8. Tables are in order of Primary keys then Foriegn keys. 
   
