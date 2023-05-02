@@ -48,7 +48,26 @@ Need to go to following server: https://app.quickdatabasediagrams.com/#/d/iu7dum
  
  #### Analysis for ERD diagram:
  This is under "QuickDBD-Employee Schema" png file.
+
+ Assumptions made:
+  - Each employee only belong to one department. The department "Sales & Marketing" is considered as one department. 
+
+ Relationships made: 
+
+     - Each department can have more than one managers, and many employees, but each employee/manager only belong to one department, hence this is one to many relationships. 
+     - Each employees has their own individual salary value and vice versa, hence this is one to one relationship. 
+     - Each employees has their own individual work title, but each work title can have many employees, so this one to many relationships. 
+     - There can be more than one employees becoming manager hence it is one to many relationships. 
  
- Assumptions 
+ ## References
  
+   - Constraints in SQL Server: SQL NOT NULL, UNIQUE and SQL PRIMARY KEY.(25/10/2017). SQL Shack. Retrived on 30 April 2023, from:<https://www.sqlshack.com/commonly-used-sql-server-constraints-not-null-unique-primary-key/>
+   - Filter By Date Parts or Date Field.(30/12/2014).Developers, Retrived on 01 May 2023, from: <https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_sql.meta/bi_dev_guide_sql/bi_sql_date_filter.htm>
+   - How to Find Duplicate Values in SQL. (2023). LearnSQL.com. Retrived on 01 May 2023, from:<https://learnsql.com/blog/how-to-find-duplicate-values-in-sql/>
+   - How to set Postgresql database to see date as "MDY" permanently.(21/01/2016).Stack Exchange. Retrived on 01 May 2023, from: <https://dba.stackexchange.com/questions/19679/how-to-set-postgresql-database-to-see-date-as-mdy-permanently>
+    https://stackoverflow.com/questions/31394998/using-sqlalchemy-to-load-csv-file-into-a-database
+   - Python Pandas merge only certain columns.(2021).Stack Overflow.Retrived on 01 May 2023, from: <https://stackoverflow.com/questions/17978133/python-pandas-merge-only-certain-columns>
+   - Pandas Filter DataFrame Rows on Dates. (31/1/2023).Sparkby{Examples}.Retrived on 02 May 2023, from:<https://sparkbyexamples.com/pandas/pandas-filter-dataframe-rows-on-dates/>
+   - Filter pandas row where 1st letter in a column is/is-not a certain value.(2/10/2018).Stack Overflow.Retrived on 01 May 2023, from: <https://stackoverflow.com/questions/52587870/filter-pandas-row-where-1st-letter-in-a-column-is-is-not-a-certain-value.>
+   - How to Count Duplicates in Pandas DataFrame.(10/09/2021).Data to Fish. Retrived on 01 May 2023, from: <https://datatofish.com/count-duplicates-pandas/>
 
